@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "projects",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "start": {
+      "type": "date"
+    },
+    "end": {
+      "type": "date"
+    },
+    "link": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "isFeatured": {
+      "type": "boolean"
+    },
+    "events": {
+      "via": "projects",
+      "collection": "events"
+    },
+    "members": {
+      "collection": "member",
+      "via": "projects",
+      "dominant": true
+    }
+  }
+}

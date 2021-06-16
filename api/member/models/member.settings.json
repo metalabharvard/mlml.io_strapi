@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "name": "member"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "mail": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "start": {
+      "type": "date"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "events": {
+      "via": "members",
+      "collection": "events"
+    },
+    "projects": {
+      "via": "members",
+      "collection": "projects"
+    }
+  }
+}
