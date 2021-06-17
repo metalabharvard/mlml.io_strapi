@@ -17,8 +17,9 @@
     },
     "description": {
       "type": "string",
-      "minLength": 150,
-      "required": true
+      "minLength": 50,
+      "required": true,
+      "maxLength": 150
     },
     "twitter": {
       "type": "string"
