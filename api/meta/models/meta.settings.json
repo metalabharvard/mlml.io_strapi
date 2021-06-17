@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "metas",
+  "info": {
+    "name": "Meta",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 150,
+      "required": true
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}

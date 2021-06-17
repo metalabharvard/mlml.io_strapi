@@ -19,9 +19,6 @@
     "twitter": {
       "type": "string"
     },
-    "mail": {
-      "type": "string"
-    },
     "website": {
       "type": "string"
     },
@@ -61,6 +58,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "email": {
+      "type": "email"
     }
   }
 }
