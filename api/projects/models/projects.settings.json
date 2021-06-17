@@ -38,8 +38,8 @@
       "collection": "events"
     },
     "members": {
-      "collection": "member",
       "via": "projects",
+      "collection": "member",
       "dominant": true
     }
   }

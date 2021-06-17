@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "roles",
+  "info": {
+    "name": "Roles"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Role": {
+      "type": "string"
+    },
+    "members": {
+      "via": "roles",
+      "collection": "member"
+    }
+  }
+}

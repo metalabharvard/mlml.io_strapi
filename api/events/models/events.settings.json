@@ -34,8 +34,8 @@
       "type": "boolean"
     },
     "members": {
-      "collection": "member",
       "via": "events",
+      "collection": "member",
       "dominant": true
     },
     "projects": {
