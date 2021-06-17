@@ -24,7 +24,7 @@
     "end": {
       "type": "date"
     },
-    "link": {
+    "externalLink": {
       "type": "string"
     },
     "description": {
@@ -41,6 +41,31 @@
       "via": "projects",
       "collection": "member",
       "dominant": true
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
     }
   }
 }

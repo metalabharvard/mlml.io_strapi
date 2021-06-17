@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "roles",
   "info": {
-    "name": "Roles"
+    "name": "Roles",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -17,6 +18,9 @@
     "members": {
       "via": "roles",
       "collection": "member"
+    },
+    "Position": {
+      "type": "integer"
     }
   }
 }

@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "Name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "twitter": {
       "type": "string"
@@ -43,12 +44,23 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "Name"
+      "targetField": "Name",
+      "required": true
     },
     "roles": {
-      "collection": "roles",
       "via": "members",
+      "collection": "roles",
       "dominant": true
+    },
+    "picture": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
