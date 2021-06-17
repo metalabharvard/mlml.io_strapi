@@ -65,7 +65,13 @@
     },
     "slug": {
       "type": "uid",
-      "required": true
+      "required": true,
+      "targetField": "title"
+    },
+    "collaborators": {
+      "type": "component",
+      "repeatable": false,
+      "component": "collabortor.collaborators"
     }
   }
 }

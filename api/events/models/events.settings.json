@@ -70,6 +70,9 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "isOngoing": {
+      "type": "boolean"
     }
   }
 }
