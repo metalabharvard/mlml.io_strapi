@@ -73,6 +73,16 @@
     },
     "isOngoing": {
       "type": "boolean"
+    },
+    "Timezone": {
+      "type": "enumeration",
+      "enum": [
+        "New_York",
+        "Los_Angeles",
+        "Berlin",
+        "London"
+      ],
+      "default": "New_York"
     }
   }
 }
