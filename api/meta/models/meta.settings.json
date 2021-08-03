@@ -29,6 +29,24 @@
     },
     "email": {
       "type": "email"
+    },
+    "vimeo": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "soundcloud": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "footer_text": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "string"
     }
   }
 }

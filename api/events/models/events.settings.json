@@ -16,7 +16,7 @@
       "type": "string",
       "required": true
     },
-    "time": {
+    "start_time": {
       "type": "datetime"
     },
     "location": {
@@ -83,6 +83,28 @@
         "London"
       ],
       "default": "New_York"
+    },
+    "end_time": {
+      "type": "datetime"
+    },
+    "events": {
+      "collection": "events",
+      "via": "event"
+    },
+    "event": {
+      "model": "events",
+      "via": "events"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "vimeo": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "link.links"
     }
   }
 }

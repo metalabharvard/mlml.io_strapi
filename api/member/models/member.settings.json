@@ -65,6 +65,21 @@
     "isAlumnus": {
       "type": "boolean",
       "default": false
+    },
+    "soundcloud": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    },
+    "vimeo": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "string"
     }
   }
 }

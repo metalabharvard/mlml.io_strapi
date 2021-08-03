@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_link_links",
+  "info": {
+    "name": "Links",
+    "icon": "project-diagram"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
