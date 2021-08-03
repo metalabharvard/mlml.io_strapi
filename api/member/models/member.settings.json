@@ -61,6 +61,10 @@
     },
     "email": {
       "type": "email"
+    },
+    "isAlumnus": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
