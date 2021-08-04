@@ -78,7 +78,7 @@
       "repeatable": true,
       "component": "press-link.press"
     },
-    "type": {
+    "category": {
       "type": "enumeration",
       "enum": [
         "project",
@@ -97,14 +97,6 @@
       "type": "component",
       "repeatable": true,
       "component": "link.links"
-    },
-    "projects": {
-      "collection": "projects",
-      "via": "project"
-    },
-    "project": {
-      "model": "projects",
-      "via": "projects"
     },
     "isOngoing": {
       "type": "boolean"
