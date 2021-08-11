@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topics",
+  "info": {
+    "name": "Topics"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Topic": {
+      "type": "string"
+    },
+    "topic": {
+      "via": "topics",
+      "model": "projects"
+    }
+  }
+}

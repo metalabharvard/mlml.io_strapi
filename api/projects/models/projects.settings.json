@@ -83,23 +83,29 @@
       "enum": [
         "project",
         "publication"
-      ]
+      ],
+      "default": "project"
     },
-    "location": {
+    "host": {
       "type": "enumeration",
       "enum": [
         "harvard",
         "berlin",
         "both"
-      ]
+      ],
+      "default": "harvard"
     },
     "links": {
       "type": "component",
       "repeatable": true,
       "component": "link.links"
     },
-    "isOngoing": {
-      "type": "boolean"
+    "location": {
+      "type": "string"
+    },
+    "topics": {
+      "collection": "topics",
+      "via": "topic"
     }
   }
 }

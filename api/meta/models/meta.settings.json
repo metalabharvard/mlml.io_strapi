@@ -47,6 +47,12 @@
     },
     "keywords": {
       "type": "string"
+    },
+    "error_title": {
+      "type": "string"
+    },
+    "error_text": {
+      "type": "string"
     }
   }
 }
