@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "topics",
   "info": {
-    "name": "Topics"
+    "name": "Topics",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,9 +15,13 @@
     "Topic": {
       "type": "string"
     },
-    "topic": {
+    "project": {
+      "collection": "projects",
+      "via": "topic"
+    },
+    "events": {
       "via": "topics",
-      "model": "projects"
+      "collection": "events"
     }
   }
 }

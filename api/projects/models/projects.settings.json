@@ -78,13 +78,16 @@
       "repeatable": true,
       "component": "press-link.press"
     },
-    "category": {
+    "mediation": {
       "type": "enumeration",
       "enum": [
-        "project",
-        "publication"
+        "print",
+        "web",
+        "exhibition",
+        "performance",
+        "mixed_media"
       ],
-      "default": "project"
+      "default": "mixed_media"
     },
     "host": {
       "type": "enumeration",
@@ -103,9 +106,10 @@
     "location": {
       "type": "string"
     },
-    "topics": {
+    "topic": {
+      "via": "project",
       "collection": "topics",
-      "via": "topic"
+      "dominant": true
     }
   }
 }

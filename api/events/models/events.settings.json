@@ -78,12 +78,10 @@
     "Timezone": {
       "type": "enumeration",
       "enum": [
-        "New_York",
-        "Los_Angeles",
-        "Berlin",
-        "London"
+        "Boston",
+        "Berlin"
       ],
-      "default": "New_York"
+      "default": "Boston"
     },
     "end_time": {
       "type": "datetime"
@@ -109,6 +107,19 @@
     },
     "appendix": {
       "type": "richtext"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "seminar",
+        "workshop",
+        "opening"
+      ]
+    },
+    "topics": {
+      "collection": "topics",
+      "via": "events",
+      "dominant": true
     }
   }
 }
