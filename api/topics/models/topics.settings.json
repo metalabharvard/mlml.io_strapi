@@ -12,16 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Topic": {
-      "type": "string"
-    },
-    "project": {
-      "collection": "projects",
-      "via": "topic"
+    "TopicLabel": {
+      "type": "string",
+      "unique": true
     },
     "events": {
       "via": "topics",
       "collection": "events"
+    },
+    "projects": {
+      "via": "topics",
+      "collection": "projects"
     }
   }
 }

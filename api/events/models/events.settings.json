@@ -117,8 +117,8 @@
       ]
     },
     "topics": {
-      "collection": "topics",
       "via": "events",
+      "collection": "topics",
       "dominant": true
     }
   }

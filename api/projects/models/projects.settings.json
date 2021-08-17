@@ -106,8 +106,8 @@
     "location": {
       "type": "string"
     },
-    "topic": {
-      "via": "project",
+    "topics": {
+      "via": "projects",
       "collection": "topics",
       "dominant": true
     }
