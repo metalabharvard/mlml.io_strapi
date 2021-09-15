@@ -55,7 +55,7 @@
       "required": false,
       "pluginOptions": {}
     },
-    "Slug": {
+    "slug": {
       "type": "uid",
       "targetField": "title",
       "required": true
