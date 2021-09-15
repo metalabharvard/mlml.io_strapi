@@ -86,14 +86,6 @@
     "end_time": {
       "type": "datetime"
     },
-    "events": {
-      "collection": "events",
-      "via": "event"
-    },
-    "event": {
-      "model": "events",
-      "via": "events"
-    },
     "youtube": {
       "type": "string"
     },
