@@ -120,6 +120,23 @@
       "via": "events",
       "collection": "topics",
       "dominant": true
+    },
+    "collaborators": {
+      "type": "component",
+      "repeatable": true,
+      "component": "collabortor.collaborators"
+    },
+    "press_articles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "press-link.press"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "teaching",
+        "event"
+      ]
     }
   }
 }
