@@ -2,11 +2,12 @@
   "collectionName": "components_collabortor_collaborators",
   "info": {
     "name": "collaborators",
-    "icon": "globe-africa"
+    "icon": "globe-africa",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "name": {
+    "label": {
       "type": "string"
     },
     "url": {

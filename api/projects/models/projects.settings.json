@@ -110,6 +110,18 @@
       "via": "projects",
       "collection": "topics",
       "dominant": true
+    },
+    "technologies": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "publication",
+        "event",
+        "teaching",
+        "project"
+      ]
     }
   }
 }
