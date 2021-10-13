@@ -15,7 +15,7 @@
     "header_title": {
       "type": "string"
     },
-    "header_description": {
+    "description": {
       "type": "string",
       "minLength": 50,
       "required": true,
