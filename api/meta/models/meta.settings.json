@@ -12,46 +12,64 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "header_title": {
       "type": "string"
     },
-    "description": {
+    "header_description": {
       "type": "string",
       "minLength": 50,
       "required": true,
       "maxLength": 150
     },
-    "twitter": {
+    "contact_twitter": {
       "type": "string"
     },
-    "github": {
+    "contact_github": {
       "type": "string"
     },
-    "email": {
+    "contact_email": {
       "type": "email"
     },
-    "vimeo": {
+    "contact_vimeo": {
       "type": "string"
     },
-    "youtube": {
+    "contact_youtube": {
       "type": "string"
     },
-    "soundcloud": {
+    "contact_soundcloud": {
       "type": "string"
     },
-    "instagram": {
+    "contact_instagram": {
       "type": "string"
     },
     "footer_text": {
       "type": "string"
     },
-    "keywords": {
+    "header_keywords": {
       "type": "string"
     },
     "error_title": {
       "type": "string"
     },
     "error_text": {
+      "type": "string"
+    },
+    "contact_facebook": {
+      "type": "string"
+    },
+    "contact_linkedin": {
+      "type": "string"
+    },
+    "label_alumni_update": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "label_timezone_boston": {
+      "type": "string"
+    },
+    "label_timezone_berlin": {
       "type": "string"
     }
   }
