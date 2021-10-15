@@ -71,6 +71,90 @@
     },
     "label_timezone_berlin": {
       "type": "string"
+    },
+    "hostsBoth": {
+      "type": "string"
+    },
+    "hostsDefault": {
+      "type": "string"
+    },
+    "hostsHeadline": {
+      "type": "string"
+    },
+    "socialFacebookTitle": {
+      "type": "string"
+    },
+    "socialGithubTitle": {
+      "type": "string"
+    },
+    "socialHomepageTitle": {
+      "type": "string"
+    },
+    "socialInstagramTitle": {
+      "type": "string"
+    },
+    "socialLinkedinTitle": {
+      "type": "string"
+    },
+    "socialEmailTitle": {
+      "type": "string"
+    },
+    "socialSoundcloudTitle": {
+      "type": "string"
+    },
+    "socialTwitterTitle": {
+      "type": "string"
+    },
+    "socialVimeoTitle": {
+      "type": "string"
+    },
+    "socialYouTubeTitle": {
+      "type": "string"
+    },
+    "socialMetalabSelf": {
+      "type": "string"
+    },
+    "relatedMembers": {
+      "type": "string"
+    },
+    "relatedProjects": {
+      "type": "string"
+    },
+    "relatedEvents": {
+      "type": "string"
+    },
+    "relatedLabelMembers": {
+      "type": "string"
+    },
+    "relatedLabelProjects": {
+      "type": "string"
+    },
+    "relatedLabelEvents": {
+      "type": "string"
+    },
+    "boxCollaborator": {
+      "type": "string"
+    },
+    "boxTime": {
+      "type": "string"
+    },
+    "boxHost": {
+      "type": "string"
+    },
+    "boxLocation": {
+      "type": "string"
+    },
+    "boxType": {
+      "type": "string"
+    },
+    "relatedLabelLinks": {
+      "type": "string"
+    },
+    "relatedLabelPressArticles": {
+      "type": "string"
+    },
+    "memberAlumnus": {
+      "type": "string"
     }
   }
 }
