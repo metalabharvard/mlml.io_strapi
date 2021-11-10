@@ -182,6 +182,21 @@
     },
     "eventRSS": {
       "type": "string"
+    },
+    "preview": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "boxFunder": {
+      "type": "string"
     }
   }
 }
