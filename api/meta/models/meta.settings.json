@@ -170,6 +170,18 @@
     },
     "ariaTimezoneBerlin": {
       "type": "string"
+    },
+    "defaultMediation": {
+      "type": "string"
+    },
+    "defaultEventCategory": {
+      "type": "string"
+    },
+    "projectRSS": {
+      "type": "string"
+    },
+    "eventRSS": {
+      "type": "string"
     }
   }
 }

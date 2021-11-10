@@ -141,6 +141,16 @@
         "canceled"
       ],
       "default": "default"
+    },
+    "preview": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
