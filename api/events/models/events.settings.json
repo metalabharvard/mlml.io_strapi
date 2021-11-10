@@ -151,6 +151,11 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "funders": {
+      "type": "component",
+      "repeatable": true,
+      "component": "funder.funders"
     }
   }
 }
