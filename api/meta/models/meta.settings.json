@@ -155,6 +155,21 @@
     },
     "memberAlumnus": {
       "type": "string"
+    },
+    "externalProject": {
+      "type": "string"
+    },
+    "externalEvent": {
+      "type": "string"
+    },
+    "ariaProfilePicture": {
+      "type": "string"
+    },
+    "ariaTimezoneBoston": {
+      "type": "string"
+    },
+    "ariaTimezoneBerlin": {
+      "type": "string"
     }
   }
 }

@@ -122,6 +122,24 @@
         "teaching",
         "project"
       ]
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "funders": {
+      "type": "component",
+      "repeatable": true,
+      "component": "funder.funders"
+    },
+    "preview": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

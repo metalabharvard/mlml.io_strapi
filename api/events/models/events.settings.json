@@ -129,6 +129,18 @@
         "teaching",
         "event"
       ]
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "postponed",
+        "canceled"
+      ],
+      "default": "default"
     }
   }
 }
