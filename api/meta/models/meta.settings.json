@@ -197,6 +197,21 @@
     },
     "boxFunder": {
       "type": "string"
+    },
+    "PagePublishedText": {
+      "type": "string"
+    },
+    "PageEditedText": {
+      "type": "string"
+    },
+    "PagePublishedFormat": {
+      "type": "string"
+    },
+    "SiteEditedText": {
+      "type": "string"
+    },
+    "SiteEditedFormat": {
+      "type": "string"
     }
   }
 }
