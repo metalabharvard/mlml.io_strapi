@@ -15,8 +15,8 @@
     "intro": {
       "type": "text"
     },
-    "headline": {
-      "type": "richtext"
+    "link": {
+      "type": "string"
     }
   }
 }

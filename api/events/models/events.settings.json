@@ -105,7 +105,8 @@
       "enum": [
         "seminar",
         "workshop",
-        "opening"
+        "opening",
+        "talk"
       ]
     },
     "topics": {
