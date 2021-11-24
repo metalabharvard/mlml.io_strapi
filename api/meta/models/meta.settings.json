@@ -224,6 +224,12 @@
     },
     "timezoneBerlinAbbr": {
       "type": "string"
+    },
+    "HomeIntro": {
+      "type": "text"
+    },
+    "HomeLink": {
+      "type": "string"
     }
   }
 }
