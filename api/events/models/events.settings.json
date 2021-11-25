@@ -169,6 +169,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "noHeaderImage": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
