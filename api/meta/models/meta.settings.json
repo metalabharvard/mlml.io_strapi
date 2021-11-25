@@ -230,6 +230,9 @@
     },
     "HomeLink": {
       "type": "string"
+    },
+    "contentJSON": {
+      "type": "string"
     }
   }
 }
