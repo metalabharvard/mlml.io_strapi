@@ -150,6 +150,18 @@
     "noHeaderImage": {
       "type": "boolean",
       "default": false
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "start_date_time": {
+      "type": "time"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "end_date_time": {
+      "type": "time"
     }
   }
 }
