@@ -153,6 +153,11 @@
     "noHeaderImage": {
       "type": "boolean",
       "default": false
+    },
+    "Aliases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "aliases.aliases"
     }
   }
 }

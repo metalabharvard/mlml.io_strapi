@@ -162,6 +162,11 @@
     },
     "end_date_time": {
       "type": "time"
+    },
+    "Aliases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "aliases.aliases"
     }
   }
 }

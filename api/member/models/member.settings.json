@@ -80,6 +80,11 @@
     },
     "intro": {
       "type": "string"
+    },
+    "Aliases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "aliases.aliases"
     }
   }
 }
