@@ -2,12 +2,14 @@
   "collectionName": "components_aliases_aliases",
   "info": {
     "name": "Aliases",
-    "icon": "align-left"
+    "icon": "align-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Aliases": {
-      "type": "string"
+      "type": "string",
+      "regex": "^[0-9a-zA-Z\\-]*$"
     }
   }
 }
