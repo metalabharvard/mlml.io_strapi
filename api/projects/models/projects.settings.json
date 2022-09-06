@@ -158,6 +158,16 @@
       "type": "component",
       "repeatable": true,
       "component": "aliases.aliases"
+    },
+    "keywords": {
+      "type": "component",
+      "repeatable": true,
+      "component": "keyword.keywords"
+    },
+    "types": {
+      "collection": "types",
+      "via": "projects",
+      "dominant": true
     }
   }
 }
