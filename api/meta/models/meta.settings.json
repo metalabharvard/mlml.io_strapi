@@ -233,6 +233,9 @@
     },
     "contentJSON": {
       "type": "string"
+    },
+    "typesHeadline": {
+      "type": "string"
     }
   }
 }
