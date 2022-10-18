@@ -239,6 +239,9 @@
     },
     "contact_mastodon": {
       "type": "string"
+    },
+    "socialMastodonTitle": {
+      "type": "string"
     }
   }
 }
