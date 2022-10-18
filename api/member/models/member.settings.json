@@ -85,6 +85,9 @@
       "type": "component",
       "repeatable": true,
       "component": "aliases.aliases"
+    },
+    "mastodon": {
+      "type": "string"
     }
   }
 }
