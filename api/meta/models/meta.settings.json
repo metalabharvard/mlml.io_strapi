@@ -236,6 +236,9 @@
     },
     "typesHeadline": {
       "type": "string"
+    },
+    "contact_mastodon": {
+      "type": "string"
     }
   }
 }
