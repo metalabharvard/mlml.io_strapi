@@ -1,5 +1,7 @@
-module.exports = () => ({
+module.exports = {
   rest: {
-    maxLimit: 1000,
+    defaultLimit: 25,
+    maxLimit: 100,
+    withCount: true,
   },
-});
+};
