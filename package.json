@@ -1,33 +1,38 @@
 {
   "name": "metalab-cms",
-  "private": true,
   "version": "0.1.0",
+  "private": true,
   "description": "A Strapi application",
-  "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
-  },
-  "devDependencies": {},
-  "dependencies": {
-    "knex": "^0.95.11",
-    "pg": "^8.5.1",
-    "pg-connection-string": "^2.5.0",
-    "@strapi/strapi": "4.24.0",
-    "@strapi/plugin-i18n": "4.24.0",
-    "@strapi/plugin-users-permissions": "4.24.0",
-    "@strapi/provider-upload-cloudinary": "4.24.0"
-  },
+  "license": "MIT",
   "author": {
     "name": "A Strapi developer"
   },
-  "strapi": {
-    "uuid": "bcebaa2e-d1e5-4dc0-adac-9b58b7cef85d"
+  "scripts": {
+    "build": "strapi build",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
   },
+  "dependencies": {
+    "@strapi/plugin-cloud": "4.24.0",
+    "@strapi/plugin-i18n": "4.24.0",
+    "@strapi/plugin-users-permissions": "4.24.0",
+    "@strapi/provider-upload-cloudinary": "^4.24.0",
+    "@strapi/strapi": "4.24.0",
+    "better-sqlite3": "8.6.0",
+    "pg": "^8.5.1",
+    "pg-connection-string": "^2.5.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.3"
+  },
+  "devDependencies": {},
   "engines": {
-    "node": ">=14.19.1 <=16.x.x",
+    "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "strapi": {
+    "uuid": "8b30e752-2b00-4a5f-aa56-7972faff94ce"
+  }
 }

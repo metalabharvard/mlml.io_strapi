@@ -1,0 +1,247 @@
+{
+  "kind": "singleType",
+  "collectionName": "metas",
+  "info": {
+    "name": "Meta",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header_title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 50,
+      "required": true,
+      "maxLength": 150
+    },
+    "contact_twitter": {
+      "type": "string"
+    },
+    "contact_github": {
+      "type": "string"
+    },
+    "contact_email": {
+      "type": "email"
+    },
+    "contact_vimeo": {
+      "type": "string"
+    },
+    "contact_youtube": {
+      "type": "string"
+    },
+    "contact_soundcloud": {
+      "type": "string"
+    },
+    "contact_instagram": {
+      "type": "string"
+    },
+    "footer_text": {
+      "type": "string"
+    },
+    "header_keywords": {
+      "type": "string"
+    },
+    "error_title": {
+      "type": "string"
+    },
+    "error_text": {
+      "type": "string"
+    },
+    "contact_facebook": {
+      "type": "string"
+    },
+    "contact_linkedin": {
+      "type": "string"
+    },
+    "label_alumni_update": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "label_timezone_boston": {
+      "type": "string"
+    },
+    "label_timezone_berlin": {
+      "type": "string"
+    },
+    "hostsBoth": {
+      "type": "string"
+    },
+    "hostsDefault": {
+      "type": "string"
+    },
+    "hostsHeadline": {
+      "type": "string"
+    },
+    "socialFacebookTitle": {
+      "type": "string"
+    },
+    "socialGithubTitle": {
+      "type": "string"
+    },
+    "socialHomepageTitle": {
+      "type": "string"
+    },
+    "socialInstagramTitle": {
+      "type": "string"
+    },
+    "socialLinkedinTitle": {
+      "type": "string"
+    },
+    "socialEmailTitle": {
+      "type": "string"
+    },
+    "socialSoundcloudTitle": {
+      "type": "string"
+    },
+    "socialTwitterTitle": {
+      "type": "string"
+    },
+    "socialVimeoTitle": {
+      "type": "string"
+    },
+    "socialYouTubeTitle": {
+      "type": "string"
+    },
+    "socialMetalabSelf": {
+      "type": "string"
+    },
+    "relatedMembers": {
+      "type": "string"
+    },
+    "relatedProjects": {
+      "type": "string"
+    },
+    "relatedEvents": {
+      "type": "string"
+    },
+    "relatedLabelMembers": {
+      "type": "string"
+    },
+    "relatedLabelProjects": {
+      "type": "string"
+    },
+    "relatedLabelEvents": {
+      "type": "string"
+    },
+    "boxCollaborator": {
+      "type": "string"
+    },
+    "boxTime": {
+      "type": "string"
+    },
+    "boxHost": {
+      "type": "string"
+    },
+    "boxLocation": {
+      "type": "string"
+    },
+    "boxType": {
+      "type": "string"
+    },
+    "relatedLabelLinks": {
+      "type": "string"
+    },
+    "relatedLabelPressArticles": {
+      "type": "string"
+    },
+    "memberAlumnus": {
+      "type": "string"
+    },
+    "externalProject": {
+      "type": "string"
+    },
+    "externalEvent": {
+      "type": "string"
+    },
+    "ariaProfilePicture": {
+      "type": "string"
+    },
+    "ariaTimezoneBoston": {
+      "type": "string"
+    },
+    "ariaTimezoneBerlin": {
+      "type": "string"
+    },
+    "defaultMediation": {
+      "type": "string"
+    },
+    "defaultEventCategory": {
+      "type": "string"
+    },
+    "projectRSS": {
+      "type": "string"
+    },
+    "eventRSS": {
+      "type": "string"
+    },
+    "preview": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "boxFunder": {
+      "type": "string"
+    },
+    "PagePublishedText": {
+      "type": "string"
+    },
+    "PageEditedText": {
+      "type": "string"
+    },
+    "PagePublishedFormat": {
+      "type": "string"
+    },
+    "SiteEditedText": {
+      "type": "string"
+    },
+    "SiteEditedFormat": {
+      "type": "string"
+    },
+    "ariaGeneralPicture": {
+      "type": "string"
+    },
+    "maxNumberFeaturedProjects": {
+      "type": "integer"
+    },
+    "timezoneBostonAbbr": {
+      "type": "string"
+    },
+    "timezoneBerlinAbbr": {
+      "type": "string"
+    },
+    "HomeIntro": {
+      "type": "text"
+    },
+    "HomeLink": {
+      "type": "string"
+    },
+    "contentJSON": {
+      "type": "string"
+    },
+    "typesHeadline": {
+      "type": "string"
+    },
+    "contact_mastodon": {
+      "type": "string"
+    },
+    "socialMastodonTitle": {
+      "type": "string"
+    }
+  }
+}

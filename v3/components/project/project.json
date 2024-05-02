@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_project_projects",
+  "info": {
+    "name": "project",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "projects": {
+      "collection": "projects"
+    }
+  }
+}

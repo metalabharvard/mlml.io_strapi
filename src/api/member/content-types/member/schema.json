@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "singularName": "member",
+    "pluralName": "members",
+    "displayName": "Member",
+    "name": "member"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "start": {
+      "type": "date"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "events": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::event.event",
+      "mappedBy": "members"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "mappedBy": "members"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Name",
+      "required": true
+    },
+    "roles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::role.role",
+      "inversedBy": "members"
+    },
+    "picture": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "email": {
+      "type": "email"
+    },
+    "isAlumnus": {
+      "type": "boolean",
+      "default": false
+    },
+    "soundcloud": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    },
+    "vimeo": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "string"
+    },
+    "Aliases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "aliases.aliases"
+    },
+    "mastodon": {
+      "type": "string"
+    }
+  }
+}

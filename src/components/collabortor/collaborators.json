@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_collabortor_collaborators",
+  "info": {
+    "icon": "globe-africa",
+    "description": "",
+    "displayName": "collaborators"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

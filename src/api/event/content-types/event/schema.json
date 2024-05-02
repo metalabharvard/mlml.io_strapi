@@ -1,0 +1,169 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "name": "event"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "start_time": {
+      "type": "datetime"
+    },
+    "location": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
+    },
+    "members": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::member.member",
+      "inversedBy": "events"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "inversedBy": "events"
+    },
+    "cover": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "gallery": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true,
+      "required": false
+    },
+    "Timezone": {
+      "type": "enumeration",
+      "enum": [
+        "Boston",
+        "Berlin"
+      ],
+      "default": "Boston"
+    },
+    "end_time": {
+      "type": "datetime"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "link.links"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "seminar",
+        "workshop",
+        "opening",
+        "talk"
+      ]
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::topic.topic",
+      "inversedBy": "events"
+    },
+    "collaborators": {
+      "type": "component",
+      "repeatable": true,
+      "component": "collabortor.collaborators"
+    },
+    "press_articles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "press-link.press"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "postponed",
+        "canceled"
+      ],
+      "default": "default"
+    },
+    "preview": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "funders": {
+      "type": "component",
+      "repeatable": true,
+      "component": "funder.funders"
+    },
+    "header": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "noHeaderImage": {
+      "type": "boolean",
+      "default": false
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "start_date_time": {
+      "type": "time"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "end_date_time": {
+      "type": "time"
+    },
+    "Aliases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "aliases.aliases"
+    }
+  }
+}

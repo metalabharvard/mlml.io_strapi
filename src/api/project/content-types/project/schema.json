@@ -1,0 +1,172 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "name": "project"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "start": {
+      "type": "date"
+    },
+    "end": {
+      "type": "date"
+    },
+    "externalLink": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "isFeatured": {
+      "type": "boolean"
+    },
+    "events": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::event.event",
+      "mappedBy": "projects"
+    },
+    "members": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::member.member",
+      "inversedBy": "projects"
+    },
+    "cover": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "gallery": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true,
+      "required": false
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "title"
+    },
+    "collaborators": {
+      "type": "component",
+      "repeatable": true,
+      "component": "collabortor.collaborators"
+    },
+    "press_articles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "press-link.press"
+    },
+    "mediation": {
+      "type": "enumeration",
+      "enum": [
+        "print",
+        "web",
+        "exhibition",
+        "performance",
+        "mixed_media"
+      ],
+      "default": "mixed_media"
+    },
+    "host": {
+      "type": "enumeration",
+      "enum": [
+        "harvard",
+        "berlin",
+        "both"
+      ],
+      "default": "harvard"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "link.links"
+    },
+    "location": {
+      "type": "string"
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::topic.topic",
+      "inversedBy": "projects"
+    },
+    "technologies": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "publication",
+        "event",
+        "teaching",
+        "project"
+      ]
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "funders": {
+      "type": "component",
+      "repeatable": true,
+      "component": "funder.funders"
+    },
+    "preview": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "header": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "noHeaderImage": {
+      "type": "boolean",
+      "default": false
+    },
+    "Aliases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "aliases.aliases"
+    },
+    "keywords": {
+      "type": "component",
+      "repeatable": true,
+      "component": "keyword.keywords"
+    },
+    "types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::type.type",
+      "inversedBy": "projects"
+    }
+  }
+}
