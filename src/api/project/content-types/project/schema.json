@@ -5,11 +5,10 @@
     "singularName": "project",
     "pluralName": "projects",
     "displayName": "Project",
-    "name": "project"
+    "name": "project",
+    "description": ""
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
     "draftAndPublish": true
   },
   "pluginOptions": {},
@@ -49,19 +48,19 @@
     },
     "cover": {
       "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false,
-      "required": false
+      ]
     },
     "gallery": {
       "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true,
-      "required": false
+      ]
     },
     "slug": {
       "type": "uid",
@@ -134,19 +133,19 @@
     },
     "preview": {
       "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false,
-      "required": false
+      ]
     },
     "header": {
       "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false,
-      "required": false
+      ]
     },
     "noHeaderImage": {
       "type": "boolean",
@@ -166,6 +165,12 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::type.type",
+      "inversedBy": "projects"
+    },
+    "labs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lab.lab",
       "inversedBy": "projects"
     }
   }

@@ -829,10 +829,9 @@ export interface ApiEventEvent extends Schema.CollectionType {
     pluralName: 'events';
     displayName: 'Event';
     name: 'event';
+    description: '';
   };
   options: {
-    increments: true;
-    timestamps: true;
     draftAndPublish: true;
   };
   attributes: {
@@ -880,6 +879,7 @@ export interface ApiEventEvent extends Schema.CollectionType {
     end_date: Attribute.Date;
     end_date_time: Attribute.Time;
     Aliases: Attribute.Component<'aliases.aliases', true>;
+    labs: Attribute.Relation<'api::event.event', 'manyToMany', 'api::lab.lab'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -898,6 +898,44 @@ export interface ApiEventEvent extends Schema.CollectionType {
   };
 }
 
+export interface ApiLabLab extends Schema.CollectionType {
+  collectionName: 'labs';
+  info: {
+    singularName: 'lab';
+    pluralName: 'labs';
+    displayName: 'Lab';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Title: Attribute.String;
+    Slug: Attribute.UID<'api::lab.lab', 'Title'>;
+    members: Attribute.Relation<
+      'api::lab.lab',
+      'manyToMany',
+      'api::member.member'
+    >;
+    events: Attribute.Relation<
+      'api::lab.lab',
+      'manyToMany',
+      'api::event.event'
+    >;
+    projects: Attribute.Relation<
+      'api::lab.lab',
+      'manyToMany',
+      'api::project.project'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::lab.lab', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::lab.lab', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiMemberMember extends Schema.CollectionType {
   collectionName: 'members';
   info: {
@@ -905,10 +943,9 @@ export interface ApiMemberMember extends Schema.CollectionType {
     pluralName: 'members';
     displayName: 'Member';
     name: 'member';
+    description: '';
   };
   options: {
-    increments: true;
-    timestamps: true;
     draftAndPublish: true;
   };
   attributes: {
@@ -944,6 +981,11 @@ export interface ApiMemberMember extends Schema.CollectionType {
     intro: Attribute.String;
     Aliases: Attribute.Component<'aliases.aliases', true>;
     mastodon: Attribute.String;
+    labs: Attribute.Relation<
+      'api::member.member',
+      'manyToMany',
+      'api::lab.lab'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1068,10 +1110,9 @@ export interface ApiProjectProject extends Schema.CollectionType {
     pluralName: 'projects';
     displayName: 'Project';
     name: 'project';
+    description: '';
   };
   options: {
-    increments: true;
-    timestamps: true;
     draftAndPublish: true;
   };
   attributes: {
@@ -1125,6 +1166,11 @@ export interface ApiProjectProject extends Schema.CollectionType {
       'api::project.project',
       'manyToMany',
       'api::type.type'
+    >;
+    labs: Attribute.Relation<
+      'api::project.project',
+      'manyToMany',
+      'api::lab.lab'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -1268,6 +1314,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::about.about': ApiAboutAbout;
       'api::event.event': ApiEventEvent;
+      'api::lab.lab': ApiLabLab;
       'api::member.member': ApiMemberMember;
       'api::meta.meta': ApiMetaMeta;
       'api::project.project': ApiProjectProject;

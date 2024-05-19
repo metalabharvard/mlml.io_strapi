@@ -5,11 +5,10 @@
     "singularName": "event",
     "pluralName": "events",
     "displayName": "Event",
-    "name": "event"
+    "name": "event",
+    "description": ""
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
     "draftAndPublish": true
   },
   "pluginOptions": {},
@@ -51,11 +50,11 @@
     },
     "cover": {
       "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false,
-      "required": false
+      ]
     },
     "slug": {
       "type": "uid",
@@ -64,11 +63,11 @@
     },
     "gallery": {
       "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": true,
-      "required": false
+      ]
     },
     "Timezone": {
       "type": "enumeration",
@@ -125,11 +124,11 @@
     },
     "preview": {
       "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false,
-      "required": false
+      ]
     },
     "funders": {
       "type": "component",
@@ -138,11 +137,11 @@
     },
     "header": {
       "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false,
-      "required": false
+      ]
     },
     "noHeaderImage": {
       "type": "boolean",
@@ -164,6 +163,12 @@
       "type": "component",
       "repeatable": true,
       "component": "aliases.aliases"
+    },
+    "labs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lab.lab",
+      "inversedBy": "events"
     }
   }
 }

@@ -5,11 +5,10 @@
     "singularName": "member",
     "pluralName": "members",
     "displayName": "Member",
-    "name": "member"
+    "name": "member",
+    "description": ""
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
     "draftAndPublish": true
   },
   "pluginOptions": {},
@@ -58,11 +57,11 @@
     },
     "picture": {
       "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false,
-      "required": false
+      ]
     },
     "email": {
       "type": "email"
@@ -93,6 +92,12 @@
     },
     "mastodon": {
       "type": "string"
+    },
+    "labs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lab.lab",
+      "inversedBy": "members"
     }
   }
 }
