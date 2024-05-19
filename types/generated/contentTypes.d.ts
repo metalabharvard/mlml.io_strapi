@@ -904,13 +904,14 @@ export interface ApiLabLab extends Schema.CollectionType {
     singularName: 'lab';
     pluralName: 'labs';
     displayName: 'Lab';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Title: Attribute.String;
-    Slug: Attribute.UID<'api::lab.lab', 'Title'>;
+    title: Attribute.String;
+    slug: Attribute.UID<'api::lab.lab', 'title'>;
     members: Attribute.Relation<
       'api::lab.lab',
       'manyToMany',

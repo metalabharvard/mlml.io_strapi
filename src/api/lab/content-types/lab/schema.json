@@ -4,19 +4,20 @@
   "info": {
     "singularName": "lab",
     "pluralName": "labs",
-    "displayName": "Lab"
+    "displayName": "Lab",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Slug": {
+    "slug": {
       "type": "uid",
-      "targetField": "Title"
+      "targetField": "title"
     },
     "members": {
       "type": "relation",
