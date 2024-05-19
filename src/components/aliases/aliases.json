@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_aliases_aliases",
+  "info": {
+    "icon": "align-left",
+    "description": "",
+    "displayName": "Aliases"
+  },
+  "options": {},
+  "attributes": {
+    "Aliases": {
+      "type": "string",
+      "regex": "^[0-9a-zA-Z\\-]*$",
+      "unique": true
+    }
+  }
+}

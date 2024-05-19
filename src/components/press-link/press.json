@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_press_link_presses",
+  "info": {
+    "icon": "align-justify",
+    "description": "",
+    "displayName": "Press"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

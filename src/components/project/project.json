@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_project_projects",
+  "info": {
+    "icon": "asterisk",
+    "displayName": "project"
+  },
+  "options": {},
+  "attributes": {
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    }
+  }
+}
