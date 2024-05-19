@@ -92,12 +92,6 @@
     },
     "mastodon": {
       "type": "string"
-    },
-    "labs": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::lab.lab",
-      "inversedBy": "members"
     }
   }
 }

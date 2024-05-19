@@ -166,12 +166,6 @@
       "relation": "manyToMany",
       "target": "api::type.type",
       "inversedBy": "projects"
-    },
-    "labs": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::lab.lab",
-      "inversedBy": "projects"
     }
   }
 }

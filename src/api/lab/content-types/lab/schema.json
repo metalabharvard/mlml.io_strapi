@@ -18,24 +18,6 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
-    },
-    "members": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::member.member",
-      "mappedBy": "labs"
-    },
-    "events": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::event.event",
-      "mappedBy": "labs"
-    },
-    "projects": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::project.project",
-      "mappedBy": "labs"
     }
   }
 }

@@ -879,7 +879,6 @@ export interface ApiEventEvent extends Schema.CollectionType {
     end_date: Attribute.Date;
     end_date_time: Attribute.Time;
     Aliases: Attribute.Component<'aliases.aliases', true>;
-    labs: Attribute.Relation<'api::event.event', 'manyToMany', 'api::lab.lab'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -912,21 +911,6 @@ export interface ApiLabLab extends Schema.CollectionType {
   attributes: {
     title: Attribute.String;
     slug: Attribute.UID<'api::lab.lab', 'title'>;
-    members: Attribute.Relation<
-      'api::lab.lab',
-      'manyToMany',
-      'api::member.member'
-    >;
-    events: Attribute.Relation<
-      'api::lab.lab',
-      'manyToMany',
-      'api::event.event'
-    >;
-    projects: Attribute.Relation<
-      'api::lab.lab',
-      'manyToMany',
-      'api::project.project'
-    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -982,11 +966,6 @@ export interface ApiMemberMember extends Schema.CollectionType {
     intro: Attribute.String;
     Aliases: Attribute.Component<'aliases.aliases', true>;
     mastodon: Attribute.String;
-    labs: Attribute.Relation<
-      'api::member.member',
-      'manyToMany',
-      'api::lab.lab'
-    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1167,11 +1146,6 @@ export interface ApiProjectProject extends Schema.CollectionType {
       'api::project.project',
       'manyToMany',
       'api::type.type'
-    >;
-    labs: Attribute.Relation<
-      'api::project.project',
-      'manyToMany',
-      'api::lab.lab'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
