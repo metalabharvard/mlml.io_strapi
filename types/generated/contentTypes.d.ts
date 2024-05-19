@@ -897,28 +897,6 @@ export interface ApiEventEvent extends Schema.CollectionType {
   };
 }
 
-export interface ApiLabLab extends Schema.CollectionType {
-  collectionName: 'labs';
-  info: {
-    singularName: 'lab';
-    pluralName: 'labs';
-    displayName: 'Lab';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  attributes: {
-    title: Attribute.String & Attribute.Required & Attribute.Unique;
-    slug: Attribute.UID<'api::lab.lab', 'title'> & Attribute.Required;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<'api::lab.lab', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<'api::lab.lab', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-  };
-}
-
 export interface ApiMemberMember extends Schema.CollectionType {
   collectionName: 'members';
   info: {
@@ -1287,7 +1265,6 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::about.about': ApiAboutAbout;
       'api::event.event': ApiEventEvent;
-      'api::lab.lab': ApiLabLab;
       'api::member.member': ApiMemberMember;
       'api::meta.meta': ApiMetaMeta;
       'api::project.project': ApiProjectProject;
