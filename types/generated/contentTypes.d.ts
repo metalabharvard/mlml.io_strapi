@@ -1172,6 +1172,28 @@ export interface ApiRoleRole extends Schema.CollectionType {
   };
 }
 
+export interface ApiTestTest extends Schema.CollectionType {
+  collectionName: 'tests';
+  info: {
+    singularName: 'test';
+    pluralName: 'tests';
+    displayName: 'Test';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::test.test', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::test.test', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiTopicTopic extends Schema.CollectionType {
   collectionName: 'topics';
   info: {
@@ -1269,6 +1291,7 @@ declare module '@strapi/types' {
       'api::meta.meta': ApiMetaMeta;
       'api::project.project': ApiProjectProject;
       'api::role.role': ApiRoleRole;
+      'api::test.test': ApiTestTest;
       'api::topic.topic': ApiTopicTopic;
       'api::type.type': ApiTypeType;
     }
