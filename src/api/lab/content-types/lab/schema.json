@@ -4,7 +4,8 @@
   "info": {
     "singularName": "lab",
     "pluralName": "labs",
-    "displayName": "Lab"
+    "displayName": "Lab",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,7 +13,31 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "members": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::member.member",
+      "mappedBy": "labs"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "mappedBy": "labs"
+    },
+    "events": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::event.event",
+      "mappedBy": "labs"
     }
   }
 }
