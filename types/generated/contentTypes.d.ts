@@ -1050,6 +1050,7 @@ export interface ApiMetaMeta extends Schema.SingleType {
     typesHeadline: Attribute.String;
     contact_mastodon: Attribute.String;
     socialMastodonTitle: Attribute.String;
+    Test: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'api::meta.meta', 'oneToOne', 'admin::user'> &
