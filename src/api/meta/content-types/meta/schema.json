@@ -238,9 +238,6 @@
     },
     "socialMastodonTitle": {
       "type": "string"
-    },
-    "Test": {
-      "type": "string"
     }
   }
 }
